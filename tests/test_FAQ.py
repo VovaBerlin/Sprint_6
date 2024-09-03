@@ -25,6 +25,6 @@ class TestFAQ:
         home_page.open_page(Urls.MAIN_PAGE)
         home_page.accept_cookie()
         home_page.click_faq(number_faq)
-        answ = home_page.text_faq_answer(number_answer)
+        answ = home_page.text_faq_answer(number_answer, answer)
 
         assert answ == answer, "Ответ не совпадает с ожидаемым значением теста."

@@ -21,4 +21,4 @@ class TestOrderPage:
         order_page.click_on_order_button()
         order_page.click_on_order_accepted()
 
-        assert 'Заказ оформлен' in order_page.order_issued()
+        assert Order.ORDER_SUCCESSFUL in order_page.order_issued(Order.ORDER_SUCCESSFUL)

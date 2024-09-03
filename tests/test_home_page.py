@@ -14,7 +14,6 @@ class TestHomePage:
         home_page.open_page(Urls.MAIN_PAGE)
         home_page.accept_cookie()
         home_page.click_top_order_button()
-        home_page.wait_for_load_order_page()
         assert home_page.current_url() == Urls.ORDER_PAGE
 
     @allure.title('Нажатие на кнопку "Заказать" в блоке "Как это работает".')
@@ -25,7 +24,6 @@ class TestHomePage:
         home_page.open_page(Urls.MAIN_PAGE)
         home_page.accept_cookie()
         home_page.click_on_down_order_button()
-        home_page.wait_for_load_order_page()
         assert home_page.current_url() == Urls.ORDER_PAGE
 
     @allure.title('При нажатии на текст "Яндекс", открывается страница "Дзен".')
@@ -36,7 +34,6 @@ class TestHomePage:
         home_page.open_page(Urls.MAIN_PAGE)
         home_page.accept_cookie()
         home_page.click_on_down_order_button()
-        home_page.wait_for_load_order_page()
         home_page.click_on_scooter_logo()
         assert home_page.current_url() == Urls.MAIN_PAGE
 

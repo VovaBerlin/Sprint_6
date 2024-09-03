@@ -5,6 +5,10 @@ class Urls:
     DZEN_PAGE = "dzen.ru"
 
 
+class Order:
+    ORDER_SUCCESSFUL = 'Заказ оформлен'
+
+
 class FAQ:
     answer_1 = "Сутки — 400 рублей. Оплата курьеру — наличными или картой."
     answer_2 = ("Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто "
@@ -30,7 +34,6 @@ class Data:
             'telephone_number': '89121232658',
             'date': '30.08.2024',
             'rental_period': 'двое суток',
-            'color': [0],
             'comment': 'Тест тест',
         },
         'data_2':
@@ -41,7 +44,6 @@ class Data:
              'telephone_number': '8912123265812',
              'date': '28.08.2024',
              'rental_period': 'сутки',
-             'color': [1, 1],
              'comment': 'А',
              },
     }
